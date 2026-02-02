@@ -5,6 +5,7 @@ A **ROS 2–based autonomous Tic-Tac-Toe system** where a robotic arm plays agai
 The project is fully modular, YAML-configurable, and designed for **robust debugging, calibration, and academic evaluation**.
 
 ## ✨ Features
+
 * 🎥 **Vision-based board detection**
   * ArUco marker localization
   * Perspective correction
@@ -13,11 +14,11 @@ The project is fully modular, YAML-configurable, and designed for **robust debug
 * 🧠 **Optimal decision making**
   * Minimax algorithm with alpha-beta pruning
   * Configurable difficulty depth
-  * 
+    
 * 🤖 **Deterministic pick-and-place**
   * YAML-defined joint trajectories
   * Repeatable, calibration-friendly motions
-  * 
+    
 * 🔊 **Human–Robot Interaction**
   * Text-to-speech via ROS 2 Actions
   * Turn announcements and game feedback
@@ -28,13 +29,12 @@ The project is fully modular, YAML-configurable, and designed for **robust debug
   * Manual board correction mode
 
 ## 📦 System Overview
+
 ```
-Camera → Vision Node → BoardState
-                       ↓
-                Game Logic Node
-                       ↓
-               Main Orchestrator
-        ↙        ↓          ↘
+Camera → Vision Node   Game Logic Node
+               ↓           ↓
+           Main Orchestrator
+        ↙         ↓         ↘
    UI Node   Pick & Place   Sound Node
 ```
 
@@ -84,13 +84,9 @@ Verify interfaces:
 ros2 interface list | grep ttt
 ```
 
----
-
 ## ▶️ Running the System
 
 Launch all nodes using Launch File:
-
-### 1️⃣ ttt_main ttt_all.launch
 
 ```bash
 ros2 launch ttt_main ttt_all.launch.py
@@ -138,8 +134,8 @@ All tunable parameters are stored in YAML files:
 This allows **rapid iteration without code changes**.
 
 ## 📚 References
-[robotic_tactoe](https://github.com/MiguelSolisSegura/robotic_tactoe/tree/main)
-[TicTacToe-Robot](https://github.com/lohxinzhi/TicTacToe-Robot)
+1. [ robotic_tactoe ](https://github.com/MiguelSolisSegura/robotic_tactoe/tree/main)
+2. [ TicTacToe-Robot ](https://github.com/lohxinzhi/TicTacToe-Robot)
 
 ## 📌 Notes
 This project was designed with:
@@ -147,7 +143,3 @@ This project was designed with:
 * **Clear modular separation**
 * **Debug-first development**
 * **Reproducible experiments**
-* Add **demo GIF / screenshots**
-* Prepare a **release checklist**
-
-Just tell me what’s next 👌
