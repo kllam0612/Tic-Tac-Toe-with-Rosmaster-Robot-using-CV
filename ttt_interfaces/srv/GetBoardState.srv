@@ -1,0 +1,6 @@
+# Request
+bool reset_diff_tracker 
+# True = Clear "prev_board" history (Start of Game)
+---
+# Response
+BoardState state

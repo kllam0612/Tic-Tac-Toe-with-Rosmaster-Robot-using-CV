@@ -1,0 +1,23 @@
+camera_params:
+  ros__parameters:
+    camera_settings:
+      brightness: 0
+      contrast: 20
+      exposure: 550
+      gain: 0
+    geometry:
+      board_corners:
+      - - 214.0
+        - 156.0
+      - - 417.0
+        - 152.0
+      - - 436.0
+        - 359.0
+      - - 214.0
+        - 365.0
+    vision_processing:
+      binary_threshold: 80
+      min_area1: 150
+      max_area1: 300
+      min_area2: 750
+      max_area2: 1100

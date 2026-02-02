@@ -1,0 +1,6 @@
+# Request
+BoardState state 
+---
+# Response
+int32 target_cell      
+

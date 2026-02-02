@@ -1,0 +1,8 @@
+# Goal
+string say
+---
+# Result
+bool say_done
+---
+# Feedback
+string log2

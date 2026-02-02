@@ -1,0 +1,5 @@
+# Request
+BoardState state
+---
+# Response: # 1-9 (Keypad Layout), -1 if error
+int32 target_cell

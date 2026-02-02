@@ -1,0 +1,6 @@
+# Request
+BoardState state
+---
+# Response: 0=Ongoing, 1=Robot Win, 2=Human Win, 3=Draw
+int32 status
+
